@@ -194,7 +194,7 @@ async def app_lifespan(server: FastMCP) -> AsyncIterator[AppContext]:
 # Create the MCP server
 mcp = FastMCP(
     "Location-Based App MCP Server",
-    dependencies=["aiohttp", "geojson", "shapely", "haversine"],
+    # dependencies=["aiohttp", "geojson", "shapely", "haversine"],
     lifespan=app_lifespan
 )
 
