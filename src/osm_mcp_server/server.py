@@ -1,4 +1,4 @@
-from mcp.server.fastmcp import FastMCP, Context
+from fastmcp import FastMCP, Context
 from dataclasses import dataclass
 from typing import AsyncIterator, List, Dict, Optional, Tuple, Any, Union
 import aiohttp
@@ -1596,4 +1596,5 @@ async def find_parking_facilities(
     }
 
 if __name__ == "__main__":
-    mcp.run()
+    # Start an HTTP server on port 8000
+    mcp.run(transport="http", host="0.0.0.0", port=2400)
