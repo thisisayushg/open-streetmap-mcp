@@ -1597,4 +1597,4 @@ async def find_parking_facilities(
 
 if __name__ == "__main__":
     # Start an HTTP server on port 8000
-    mcp.run(transport="http", host="0.0.0.0", port=2400)
+    mcp.run(transport="http", host="0.0.0.0", port=8000)
